@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("scanner_project")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ScannerA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a3da4af495b4a1e1aeb66135ee2e7486e19e97e")]
-[assembly: System.Reflection.AssemblyProductAttribute("scanner_project")]
-[assembly: System.Reflection.AssemblyTitleAttribute("scanner_project")]
+[assembly: System.Reflection.AssemblyProductAttribute("ScannerA")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ScannerA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

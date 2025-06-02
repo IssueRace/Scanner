@@ -1,0 +1,15 @@
+C:\Users\aleks\source\repos\scanner_project\scanner_project\bin\Debug\net9.0\scanner_project.exe
+C:\Users\aleks\source\repos\scanner_project\scanner_project\bin\Debug\net9.0\scanner_project.deps.json
+C:\Users\aleks\source\repos\scanner_project\scanner_project\bin\Debug\net9.0\scanner_project.runtimeconfig.json
+C:\Users\aleks\source\repos\scanner_project\scanner_project\bin\Debug\net9.0\scanner_project.dll
+C:\Users\aleks\source\repos\scanner_project\scanner_project\bin\Debug\net9.0\scanner_project.pdb
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\scanner_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\scanner_project.AssemblyInfoInputs.cache
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\scanner_project.AssemblyInfo.cs
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\scanner_project.csproj.CoreCompileInputs.cache
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\scanner_project.sourcelink.json
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\scanner_project.dll
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\refint\scanner_project.dll
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\scanner_project.pdb
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\scanner_project.genruntimeconfig.cache
+C:\Users\aleks\source\repos\scanner_project\scanner_project\obj\Debug\net9.0\ref\scanner_project.dll

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aleks\\source\\repos\\scanner_project\\scanner_project\\scanner_project.csproj",
-      "projectName": "scanner_project",
-      "projectPath": "C:\\Users\\aleks\\source\\repos\\scanner_project\\scanner_project\\scanner_project.csproj",
+      "projectUniqueName": "C:\\Users\\aleks\\source\\repos\\scanner_project\\scanner_project\\ScannerA.csproj",
+      "projectName": "ScannerA",
+      "projectPath": "C:\\Users\\aleks\\source\\repos\\scanner_project\\scanner_project\\ScannerA.csproj",
       "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aleks\\source\\repos\\scanner_project\\scanner_project\\obj\\",
       "projectStyle": "PackageReference",
