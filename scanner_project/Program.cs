@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Diagnostics;
+using System.Threading.Tasks; 
 
 namespace ScannerA
 {
@@ -8,6 +10,8 @@ namespace ScannerA
     {
         static void Main(string[] args)
         {
+            Process.GetCurrentProcess().ProcessorAffinity = (IntPtr)(1 << 0);
+
             Console.WriteLine("ScannerA: Enter directory path:");
             string directoryPath = Console.ReadLine();
 
@@ -17,14 +21,19 @@ namespace ScannerA
                 return;
             }
 
-            var wordIndex = IndexFiles(directoryPath);
-            foreach (var fileEntry in wordIndex)
+            Task<Dictionary<string, Dictionary<string, int>>> indexTask = Task.Run(() => IndexFiles(directoryPath));
+
+            Task.Run(async () =>
             {
-                foreach (var wordEntry in fileEntry.Value)
+                var wordIndex = await indexTask; 
+                foreach (var fileEntry in wordIndex)
                 {
-                    Console.WriteLine($"{fileEntry.Key}:{wordEntry.Key}:{wordEntry.Value}");
+                    foreach (var wordEntry in fileEntry.Value)
+                    {
+                        Console.WriteLine($"{fileEntry.Key}:{wordEntry.Key}:{wordEntry.Value}");
+                    }
                 }
-            }
+            }).Wait(); 
         }
 
         static Dictionary<string, Dictionary<string, int>> IndexFiles(string directoryPath)
