@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Pipes;
 using System.Diagnostics;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 
 namespace ScannerA
 {
@@ -25,15 +26,9 @@ namespace ScannerA
 
             Task.Run(async () =>
             {
-                var wordIndex = await indexTask; 
-                foreach (var fileEntry in wordIndex)
-                {
-                    foreach (var wordEntry in fileEntry.Value)
-                    {
-                        Console.WriteLine($"{fileEntry.Key}:{wordEntry.Key}:{wordEntry.Value}");
-                    }
-                }
-            }).Wait(); 
+                var wordIndex = await indexTask;
+                await SendDataToMaster(wordIndex);
+            }).Wait();
         }
 
         static Dictionary<string, Dictionary<string, int>> IndexFiles(string directoryPath)
@@ -64,6 +59,35 @@ namespace ScannerA
             }
 
             return wordIndex;
+        }
+
+        static async Task SendDataToMaster(Dictionary<string, Dictionary<string, int>> wordIndex)
+        {
+            using (NamedPipeClientStream pipeClient = new NamedPipeClientStream(".", "agent1", PipeDirection.Out))
+            {
+                try
+                {
+                    Console.WriteLine("ScannerA: Connecting to Master...");
+                    await pipeClient.ConnectAsync(5000); // Timeout 5 seconds
+                    Console.WriteLine("ScannerA: Connected to Master.");
+
+                    using (StreamWriter writer = new StreamWriter(pipeClient))
+                    {
+                        writer.AutoFlush = true;
+                        foreach (var fileEntry in wordIndex)
+                        {
+                            foreach (var wordEntry in fileEntry.Value)
+                            {
+                                await writer.WriteLineAsync($"{fileEntry.Key}:{wordEntry.Key}:{wordEntry.Value}");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"ScannerA: Error - {ex.Message}");
+                }
+            }
         }
     }
 }
