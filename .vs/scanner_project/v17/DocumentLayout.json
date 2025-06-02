@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aleks\\source\\repos\\scanner_project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{840DA9BC-2F21-43E2-85DC-F2A14285E5EC}|scanner_project\\scanner_project.csproj|c:\\users\\aleks\\source\\repos\\scanner_project\\scanner_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840DA9BC-2F21-43E2-85DC-F2A14285E5EC}|scanner_project\\scanner_project.csproj|solutionrelative:scanner_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\scanner_project\\scanner_project\\Program.cs",
+              "RelativeDocumentMoniker": "scanner_project\\Program.cs",
+              "ToolTip": "C:\\Users\\aleks\\source\\repos\\scanner_project\\scanner_project\\Program.cs",
+              "RelativeToolTip": "scanner_project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T09:24:35.413Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
