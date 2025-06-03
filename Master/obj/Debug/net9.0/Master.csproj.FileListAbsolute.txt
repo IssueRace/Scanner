@@ -1,0 +1,15 @@
+C:\Users\aleks\source\repos\scanner_project\Master\bin\Debug\net9.0\Master.exe
+C:\Users\aleks\source\repos\scanner_project\Master\bin\Debug\net9.0\Master.deps.json
+C:\Users\aleks\source\repos\scanner_project\Master\bin\Debug\net9.0\Master.runtimeconfig.json
+C:\Users\aleks\source\repos\scanner_project\Master\bin\Debug\net9.0\Master.dll
+C:\Users\aleks\source\repos\scanner_project\Master\bin\Debug\net9.0\Master.pdb
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\Master.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\Master.AssemblyInfoInputs.cache
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\Master.AssemblyInfo.cs
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\Master.csproj.CoreCompileInputs.cache
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\Master.sourcelink.json
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\Master.dll
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\refint\Master.dll
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\Master.pdb
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\Master.genruntimeconfig.cache
+C:\Users\aleks\source\repos\scanner_project\Master\obj\Debug\net9.0\ref\Master.dll
