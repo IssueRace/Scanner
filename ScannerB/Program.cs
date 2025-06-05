@@ -27,6 +27,13 @@ namespace ScannerB
                     continue;
                 }
 
+                var txtFiles = Directory.GetFiles(directoryPath, "*.txt");
+                if (txtFiles.Length == 0)
+                {
+                    Console.WriteLine("No .txt files found in directory!");
+                    continue;
+                }
+
                 Task<Dictionary<string, Dictionary<string, int>>> indexTask = Task.Run(() => IndexFiles(directoryPath));
 
                 Task.Run(async () =>
